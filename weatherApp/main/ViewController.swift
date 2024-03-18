@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import CoreImage
 
+public var cityName: String = ""
 class ViewController: UIViewController {
     
-     
+    
     let button1 = UIButton(type: .system)
     let button2 = UIButton(type: .system)
     let button3 = UIButton(type: .system)
@@ -37,15 +39,15 @@ class ViewController: UIViewController {
         
         
         button2.frame = CGRect(x: 50, y: 280, width: 300, height: 100)
-        button2.setTitle("DUBAI", for: .normal)
+        button2.setTitle("OSLO", for: .normal)
         button2.setTitleColor(.white, for: .normal)
         button2.addTarget(self, action: #selector(button2Action), for: .touchUpInside)
         button2.backgroundColor = .black
         button2.layer.cornerRadius = 20
         button2.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
-        let dubaiBackgroundImage = UIImage(named: "dubai")
+        let osloBackgroundImage = UIImage(named: "oslo")
         button2.backgroundColor = .clear
-        button2.setBackgroundImage(dubaiBackgroundImage, for: .normal)
+        button2.setBackgroundImage(osloBackgroundImage, for: .normal)
         button2.clipsToBounds = true
         button2.layer.borderWidth = 2
         button2.layer.borderColor = UIColor.black.cgColor
@@ -66,15 +68,15 @@ class ViewController: UIViewController {
         button3.layer.borderColor = UIColor.black.cgColor
         
         button4.frame = CGRect(x: 50, y: 600, width: 300, height: 100)
-        button4.setTitle("TOKYO", for: .normal)
+        button4.setTitle("WASHINGTON", for: .normal)
         button4.setTitleColor(.white, for: .normal)
         button4.addTarget(self, action: #selector(button4Action), for: .touchUpInside)
         button4.backgroundColor = .black
         button4.layer.cornerRadius = 20
         button4.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
-        let tokyoBackgroundImage = UIImage(named: "tokyo")
+        let washingtonBackgroundImage = UIImage(named: "washington")
         button4.backgroundColor = .clear
-        button4.setBackgroundImage(tokyoBackgroundImage, for: .normal)
+        button4.setBackgroundImage(washingtonBackgroundImage, for: .normal)
         button4.clipsToBounds = true
         button4.layer.borderWidth = 2
         button4.layer.borderColor = UIColor.black.cgColor
@@ -85,18 +87,35 @@ class ViewController: UIViewController {
         view.addSubview(button4)
     
         }
+    
+    private func openNewScreen() {
+        let storyboard = UIStoryboard(name: "WeatherViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "WeatherViewController") as! WeatherViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     @objc func button1Action() {
-        print("Will get weather")
+        cityName = "Moscow"
+       openNewScreen()
     }
+    
+    
     @objc func button2Action() {
-        print("Will get weather")
+        cityName = "Oslo"
+        openNewScreen()
+         
     }
+    
     @objc func button3Action() {
-        print("Will get weather")
+        cityName = "Beijing"
+        openNewScreen()
     }
     @objc func button4Action() {
-        print("Will get weather")
+        cityName = "Washington"
+        openNewScreen()
     }
+    
     
 }
 
