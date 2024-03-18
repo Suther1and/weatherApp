@@ -57,7 +57,6 @@ class WeatherViewController: UIViewController {
         if cityName == "Moscow" {
             imageView.image = UIImage(named: "moscow")
             currentCountryFlag.image = UIImage(named: "russia")
-            
         }else if cityName == "Oslo"{
             imageView.image = UIImage(named: "oslo")
             currentCountryFlag.image = UIImage(named: "norway")
