@@ -17,6 +17,8 @@ class WeatherViewController: UIViewController {
     @IBOutlet var currentWeatherStringLabel: UILabel!
     @IBOutlet var currentCountryFlag: UIImageView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getWeather()
@@ -33,7 +35,14 @@ class WeatherViewController: UIViewController {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let data, let weather = try? JSONDecoder().decode(WeatherData.self, from: data){
                 DispatchQueue.main.async {
-                    self.weatherLabel.text = "\(weather.main.temp) ℃"
+                    if (Int((weather.main.temp).rounded())) > 0 {
+                        self.weatherLabel.text = "+ \(Int((weather.main.temp).rounded())) ℃"
+                    }else if (Int((weather.main.temp).rounded())) < 0 {
+                        self.weatherLabel.text = "- \(Int((weather.main.temp).rounded())) ℃"
+                    }else if (Int((weather.main.temp).rounded())) == 0 {
+                        self.weatherLabel.text = "\(Int((weather.main.temp).rounded())) ℃"
+                    }
+                     
                 }
             }else{
                 print("Failed")
