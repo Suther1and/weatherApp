@@ -19,10 +19,13 @@ class WeatherViewController: UIViewController {
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getWeather()
         getImage()
+        
+        
         currentWeatherStringLabel.text = "Current weather in \(cityName) is:"
         
         view.backgroundColor = .systemGray5
@@ -36,11 +39,11 @@ class WeatherViewController: UIViewController {
             if let data, let weather = try? JSONDecoder().decode(WeatherData.self, from: data){
                 DispatchQueue.main.async {
                     if (Int((weather.main.temp).rounded())) > 0 {
-                        self.weatherLabel.text = "+ \(Int((weather.main.temp).rounded())) ℃"
+                        self.weatherLabel.text = "+\(Int((weather.main.temp).rounded()))℃"
                     }else if (Int((weather.main.temp).rounded())) < 0 {
-                        self.weatherLabel.text = "- \(Int((weather.main.temp).rounded())) ℃"
+                        self.weatherLabel.text = "\(Int((weather.main.temp).rounded()))℃"
                     }else if (Int((weather.main.temp).rounded())) == 0 {
-                        self.weatherLabel.text = "\(Int((weather.main.temp).rounded())) ℃"
+                        self.weatherLabel.text = "\(Int((weather.main.temp).rounded()))℃"
                     }
                      
                 }
@@ -54,6 +57,7 @@ class WeatherViewController: UIViewController {
         if cityName == "Moscow" {
             imageView.image = UIImage(named: "moscow")
             currentCountryFlag.image = UIImage(named: "russia")
+            
         }else if cityName == "Oslo"{
             imageView.image = UIImage(named: "oslo")
             currentCountryFlag.image = UIImage(named: "norway")

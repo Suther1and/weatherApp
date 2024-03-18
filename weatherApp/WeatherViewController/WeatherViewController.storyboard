@@ -17,21 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dno-2j-gob">
-                                <rect key="frame" x="0.0" y="301" width="393" height="236"/>
+                                <rect key="frame" x="0.0" y="303" width="393" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtK-zb-DB7">
-                                <rect key="frame" x="60" y="123" width="273" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <rect key="frame" x="24" y="99" width="345" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkF-cd-iK4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkF-cd-iK4">
                                 <rect key="frame" x="0.0" y="537" width="393" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8B-4C-caK">
-                                <rect key="frame" x="40" y="174" width="313" height="42"/>
+                                <rect key="frame" x="40" y="155.33333333333334" width="313" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,10 +44,10 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d8B-4C-caK" secondAttribute="trailing" constant="40" id="4ir-lN-hcW"/>
                             <constraint firstItem="ZtK-zb-DB7" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="5Xp-mY-a5O"/>
                             <constraint firstItem="d8B-4C-caK" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="SER-al-16u"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZtK-zb-DB7" secondAttribute="trailing" constant="60" id="SNV-F0-doC"/>
-                            <constraint firstItem="ZtK-zb-DB7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="64" id="cN3-Xp-rXn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZtK-zb-DB7" secondAttribute="trailing" constant="24" id="SNV-F0-doC"/>
+                            <constraint firstItem="ZtK-zb-DB7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="cN3-Xp-rXn"/>
                             <constraint firstItem="d8B-4C-caK" firstAttribute="top" secondItem="ZtK-zb-DB7" secondAttribute="bottom" constant="30" id="dcR-Bu-k5a"/>
-                            <constraint firstItem="ZtK-zb-DB7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="ht4-50-jK9"/>
+                            <constraint firstItem="ZtK-zb-DB7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="ht4-50-jK9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iTg-99-XMI"/>
