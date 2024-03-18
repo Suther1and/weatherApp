@@ -9,6 +9,7 @@ import UIKit
 import CoreImage
 
 public var cityName: String = ""
+
 class ViewController: UIViewController {
     
     

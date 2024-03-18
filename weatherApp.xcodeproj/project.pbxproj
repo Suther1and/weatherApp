@@ -15,7 +15,6 @@
 		B1C55EA82BA882FA00F31ACB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C55E9F2BA878DD00F31ACB /* WeatherViewController.swift */; };
 		B1C55EA92BA882FF00F31ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C55E892BA855D600F31ACB /* AppDelegate.swift */; };
 		B1C55EAA2BA8830100F31ACB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C55E8B2BA855D600F31ACB /* SceneDelegate.swift */; };
-		B1C55EB02BA894E400F31ACB /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C55EAF2BA894E400F31ACB /* WeatherAPI.swift */; };
 		B1C55EB22BA8972F00F31ACB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C55EB12BA8972F00F31ACB /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		B1C55E972BA855D700F31ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = weatherApp/Application/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		B1C55E9F2BA878DD00F31ACB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		B1C55EA12BA87AE900F31ACB /* WeatherViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherViewController.storyboard; sourceTree = "<group>"; };
-		B1C55EAF2BA894E400F31ACB /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		B1C55EB12BA8972F00F31ACB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				B1C55E9F2BA878DD00F31ACB /* WeatherViewController.swift */,
-				B1C55EAF2BA894E400F31ACB /* WeatherAPI.swift */,
 				B1C55EB12BA8972F00F31ACB /* WeatherData.swift */,
 				B1C55EA12BA87AE900F31ACB /* WeatherViewController.storyboard */,
 			);
@@ -185,7 +182,6 @@
 			files = (
 				B1C55EAA2BA8830100F31ACB /* SceneDelegate.swift in Sources */,
 				B1C55EA92BA882FF00F31ACB /* AppDelegate.swift in Sources */,
-				B1C55EB02BA894E400F31ACB /* WeatherAPI.swift in Sources */,
 				B1C55EA82BA882FA00F31ACB /* WeatherViewController.swift in Sources */,
 				B1C55EA72BA882F400F31ACB /* ViewController.swift in Sources */,
 				B1C55EB22BA8972F00F31ACB /* WeatherData.swift in Sources */,
